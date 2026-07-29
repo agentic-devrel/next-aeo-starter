@@ -1,0 +1,38 @@
+name: Feature request
+description: Propose a focused, evidence-labeled improvement.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the developer or user need without prescribing an implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Explain the smallest public contract that would solve the problem.
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence
+    attributes:
+      label: Evidence classification
+      options:
+        - Web standard
+        - Widely adopted practice
+        - Emerging convention
+        - Experiment
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation method
+      description: What objective check or experiment would show that this proposal failed?
+    validations:
+      required: true
